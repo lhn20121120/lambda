@@ -1,0 +1,25 @@
+server:
+  port: 80
+
+spring:
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/lambda
+    username: root
+    password: admin
+    max-active: 20
+    max-idle: 8
+    mix-idle: 8
+#  thymeleaf:
+#    mode: LEGACYHTML5
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+mybatis:
+  mapperLocations: classpath:mybatis/system/*.xml
+  typeAliasesPackage: classpath:com.lk.lambda.model
+  config-location: classpath:mybatis/mybatis-config.xml
+#  typeHandlersPackage:
+#  checkConfigLocation:
+#  executorType:
