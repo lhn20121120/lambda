@@ -5,7 +5,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-@MapperScan("com.lk.lambda.mapper")
+@MapperScan(basePackages = "com.lk.lambda.mapper")
+
 public class LambdaApplication {
 
 	public static void main(String[] args) {

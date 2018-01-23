@@ -14,12 +14,29 @@ spring:
 #    mode: LEGACYHTML5
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: create
     show-sql: true
-mybatis:
-  mapperLocations: classpath:mybatis/system/*.xml
-  typeAliasesPackage: classpath:com.lk.lambda.model
-  config-location: classpath:mybatis/mybatis-config.xml
+#mybatis:
+#  mapperLocations: classpath:mybatis/system/*.xml
+#  typeAliasesPackage: classpath:com.lk.lambda.model
+#  config-location: classpath:mybatis/mybatis-config.xml
 #  typeHandlersPackage:
 #  checkConfigLocation:
 #  executorType:
+#mybatis.mapper-locations=classpath*:org/springboot/sample/mapper/sql/mysql/*Mapper.xml
+#mybatis.type-aliases-package=org.springboot.sample.entity
+mybatis:
+    type-aliases-package: com.lk.lambda.model
+    mapper-locations: classpath:mapper/*.xml
+
+mapper:
+    mappers:
+        - tk.mybatis.springboot.util.MyMapper
+    not-empty: false
+    identity: MYSQL
+
+pagehelper:
+    helperDialect: mysql
+    reasonable: true
+    supportMethodsArguments: true
+    params: count=countSql

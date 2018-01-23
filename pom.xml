@@ -57,13 +57,14 @@
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
 		</dependency>
-		<!--mybatis 分页查询-->
-		<!-- https://mvnrepository.com/artifact/com.github.pagehelper/pagehelper-spring-boot-starter -->
+	<!--	mybatis 分页查询
+		 https://mvnrepository.com/artifact/com.github.pagehelper/pagehelper-spring-boot-starter-->
 		<dependency>
 			<groupId>com.github.pagehelper</groupId>
 			<artifactId>pagehelper-spring-boot-starter</artifactId>
 			<version>1.1.1</version>
 		</dependency>
+
 		<!--<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-tomcat</artifactId>
@@ -84,7 +85,18 @@
 			<artifactId>mybatis-plus-support</artifactId>
 			<version>RELEASE</version>
 		</dependency>
-	</dependencies>
+        <!-- https://mvnrepository.com/artifact/tk.mybatis/mapper -->
+        <dependency>
+            <groupId>tk.mybatis</groupId>
+            <artifactId>mapper</artifactId>
+            <version>3.4.3</version>
+        </dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>${jstl.version}</version>
+		</dependency>
+    </dependencies>
 
 	<build>
 		<plugins>
@@ -102,8 +114,8 @@
 				<filtering>false</filtering>
 			</resource>
 		</resources>
-
 	</build>
+
 
 	<repositories>
 		<repository>
@@ -124,11 +136,6 @@
 		</repository>
 	</repositories>
 
-
-	作者：michael_wlq
-	链接：https://www.jianshu.com/p/800fe918cc7a
-	來源：简书
-	著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 	<pluginRepositories>
 		<pluginRepository>
 			<id>spring-snapshots</id>
