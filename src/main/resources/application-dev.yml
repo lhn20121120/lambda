@@ -31,7 +31,7 @@ mybatis:
 
 mapper:
     mappers:
-        - tk.mybatis.springboot.util.MyMapper
+        - com.lk.lambda.util.MyMapper
     not-empty: false
     identity: MYSQL
 

@@ -1,4 +1,4 @@
-package com.lk.lambda.common.utils;
+package com.lk.lambda.utils;
 
 /**
  * Author: D.Yang

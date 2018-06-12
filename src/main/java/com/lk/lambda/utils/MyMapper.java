@@ -1,4 +1,4 @@
-package com.lk.lambda.common;
+package com.lk.lambda.utils;
 
 
 import tk.mybatis.mapper.common.Mapper;

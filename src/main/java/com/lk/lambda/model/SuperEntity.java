@@ -1,4 +1,4 @@
-package com.lk.lambda.common;
+package com.lk.lambda.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
